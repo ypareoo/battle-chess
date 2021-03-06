@@ -1,0 +1,82 @@
+ body {
+	background-image : url("chessbackg.jpg") ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; /*taille*/
+	text-align: center;
+	}
+	
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	/*background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text; 
+	background-clip: text;
+	color: transparent;
+	background-color: #494545;
+	padding: 2px;
+	font-size: 20px; /*taille de police*/
+}
+
+#sticky {
+	background-color: rgb(255,255,255);
+}
+
+.respire {
+	height: 40px;
+}
+.nombre {
+	display: inline-block;/*alignerment à l'horizontale*/
+	
+	
+	font-size: 50px; /*taille de police*/
+	
+	column-count: 2;
+}
+
+#nbrT {
+	border: solid rgb(255,0,0);
+	width: 300px;
+	height: 145px;
+	color: black;
+	background: white;
+}
+
+#nbrP {
+	border: solid rgb(0,255,0);
+	width: 300px;
+	height: 145px;
+	color: black;
+	background: white;
+}
+
+.detail {
+	background-color: #494545;
+}
+.surligne {
+	background-color: yellow;
+}
+
+tr {
+	border: 1px solid white;
+}
+td {
+	border: 1px solid #333;
+}
+
+#Date{border: 1px solid #333;}
+
+.footer {
+	/*position: fixed;*/
+	position: sticky; /*collant (reste visible sur la page*/
+	left: 0;
+	bottom: 0; /*reste en bas de la fenêtre*/
+	width: 100%;
+	background-color: rgba(255,255,255,0.85);
+	color: black;
+	text-align: center;
+}
+	
