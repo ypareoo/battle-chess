@@ -7,49 +7,60 @@
 	}
 	
 .sticky {
-	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	/*background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
-	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);-webkit-background-clip: text;
+	/*background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);-webkit-background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text; 
 	background-clip: text;
 	color: transparent;
-	background-color: #494545;
+	background-color: #494545;*/
 	padding: 2px;
 	font-size: 20px; /*taille de police*/
 }
 
 #sticky {
 	background-color: rgb(255,255,255);
+	position: sticky;
+	top: 0;
+	border: solid hsl(324, 70%, 45%);
+	border-width: 4px;
+    animation: wheelHueColor 1s infinite;
 }
 
 .respire {
-	height: 40px;
+	border: solid rgba(0,255,0,0);
+	border-width: 14px;
 }
 .nombre {
-	display: inline-block;/*alignerment à l'horizontale*/
+	/*display: inline-block;/*alignerment à l'horizontale*/
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
 	
 	
 	font-size: 50px; /*taille de police*/
 	
-	column-count: 2;
+	/*column-count: 2;*/
 }
 
 #nbrT {
 	border: solid rgb(255,0,0);
-	width: 300px;
-	height: 145px;
+	border-width: 14px;
+	width: 250px;
+	height: 135px;
 	color: black;
 	background: white;
 }
 
 #nbrP {
-	border: solid rgb(0,255,0);
-	width: 300px;
-	height: 145px;
-	color: black;
+	border: solid ;
+	animation: wheelHueColor 0.5s infinite;
+	border-width: 14px;
+	width: 250px;
+	height: 135px;
+	/*color: black;*/
 	background: white;
 }
 
@@ -58,10 +69,15 @@
 }
 .surligne {
 	background-color: yellow;
+	color: black;
 }
-
+table {
+    width: 63%;
+	
+}
 tr {
 	border: 1px solid white;
+	height: 50px;
 }
 td {
 	border: 1px solid #333;
@@ -78,5 +94,23 @@ td {
 	background-color: rgba(255,255,255,0.85);
 	color: black;
 	text-align: center;
+}
+
+@keyframes wheelHueColor {
+    from, to { color: hsl(324, 100%, 45%); }
+    10%      { color: hsl(360, 100%, 45%); }
+    20%      { color: hsl( 36, 100%, 45%); }
+    30%      { color: hsl( 72, 100%, 35%); }
+    40%      { color: hsl(108, 100%, 35%); }
+    50%      { color: hsl(144, 100%, 35%); }
+    60%      { color: hsl(170, 100%, 35%); }
+    70%      { color: hsl(220, 100%, 45%); }
+    80%      { color: hsl(252, 100%, 50%); }
+    90%      { color: hsl(288, 100%, 40%); }
+}
+
+body {
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 0.8s infinite;
 }
 	
